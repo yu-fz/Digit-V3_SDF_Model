@@ -1,0 +1,340 @@
+<?xml version='1.0'?>
+<sdf xmlns:drake="http://drake.mit.edu" version="1.9">
+<model name="digit_right_arm">
+<link name="right_shoulder_roll">
+    <pose>0 0 0 0 0 0</pose>
+    <inertial>
+        <pose>9e-06 -0.003158 0.023405 0 0 0</pose>
+        <mass>0.535396</mass>
+        <inertia>
+        <ixx>0.000704</ixx>
+        <iyy>0.00075</iyy>
+        <izz>0.000298</izz>
+        <ixy>-1.4e-05</ixy>
+        <ixz>1.2e-05</ixz>
+        <iyz>-3.5e-05</iyz>
+        </inertia>
+    </inertial>
+    <visual name="arm_l1_visual">
+        <pose relative_to="right_shoulder_roll">0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh> 
+            <uri>package://drail_drake/model_files/digit/visual/arm-L1-mirror.obj</uri> 
+        </mesh>
+        </geometry>
+    </visual>
+    <collision name="collision_0000">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh> 
+            <uri>package://drail_drake/model_files/digit/collision/arm-L1-mirror_parts/arm-L1-mirror_convex_piece_000.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+    <collision name="collision_0001">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>   
+        <mesh>
+            <uri>package://drail_drake/model_files/digit/collision/arm-L1-mirror_parts/arm-L1-mirror_convex_piece_001.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+    <collision name="collision_0002">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh>
+            <uri>package://drail_drake/model_files/digit/collision/arm-L1-mirror_parts/arm-L1-mirror_convex_piece_002.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+    <collision name="collision_0003">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh>
+            <uri>package://drail_drake/model_files/digit/collision/arm-L1-mirror_parts/arm-L1-mirror_convex_piece_003.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+    <collision name="collision_0004">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh>
+            <uri>package://drail_drake/model_files/digit/collision/arm-L1-mirror_parts/arm-L1-mirror_convex_piece_004.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+    <collision name="collision_0005">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh>
+            <uri>package://drail_drake/model_files/digit/collision/arm-L1-mirror_parts/arm-L1-mirror_convex_piece_005.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+    <collision name="collision_0006">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh>
+            <uri>package://drail_drake/model_files/digit/collision/arm-L1-mirror_parts/arm-L1-mirror_convex_piece_006.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+    <collision name="collision_0007">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh>
+            <uri>package://drail_drake/model_files/digit/collision/arm-L1-mirror_parts/arm-L1-mirror_convex_piece_007.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+</link>
+<link name="right_shoulder_pitch">
+    <inertial>
+        <pose>-4.2e-05 -0.061882 -0.073788 0 0 0</pose>
+        <mass>1.440357</mass>
+        <inertia>
+        <ixx>0.006761</ixx>
+        <iyy>0.002087</iyy>
+        <izz>0.005778</izz>
+        <ixy>6e-06</ixy>
+        <ixz>-3e-06</ixz>
+        <iyz>0.002046</iyz>
+        </inertia>
+    </inertial>
+    <visual name="arm_l2_visual">
+        <pose relative_to="shoulder_pitch_joint_right">0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh>
+            <uri>package://drail_drake/model_files/digit/visual/arm-L2-mirror.obj</uri>
+        </mesh>    
+        </geometry>
+    </visual>
+    <collision name="collision_0000">
+        <pose relative_to="shoulder_pitch_joint_right">0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh> 
+            <uri>package://drail_drake/model_files/digit/collision/arm-L2-mirror_parts/arm-L2-mirror_convex_piece_000.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+    <collision name="collision_0001">
+        <pose relative_to="shoulder_pitch_joint_right">0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh> 
+            <uri>package://drail_drake/model_files/digit/collision/arm-L2-mirror_parts/arm-L2-mirror_convex_piece_001.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+    <collision name="collision_0002">
+        <pose relative_to="shoulder_pitch_joint_right">0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh> 
+            <uri>package://drail_drake/model_files/digit/collision/arm-L2-mirror_parts/arm-L2-mirror_convex_piece_002.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+    <collision name="collision_0003">
+        <pose relative_to="shoulder_pitch_joint_right">0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh> 
+            <uri>package://drail_drake/model_files/digit/collision/arm-L2-mirror_parts/arm-L2-mirror_convex_piece_003.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+</link>
+<link name="right_shoulder_yaw">
+    <inertial>
+        <pose>-3e-05 -0.001937 0.11407 0 0 0</pose>
+        <mass>1.065387</mass>
+        <inertia>
+        <ixx>0.006967</ixx>
+        <iyy>0.007003</iyy>
+        <izz>0.000673</izz>
+        <ixy>1e-06</ixy>
+        <ixz>-1e-06</ixz>
+        <iyz>1.5e-05</iyz>
+        </inertia>
+    </inertial>
+    <visual name="arm_l3_visual">
+        <pose relative_to="shoulder_yaw_joint_right">0 0 0 0 0 -0.3926991</pose>
+        <geometry>
+        <mesh> 
+            <uri>package://drail_drake/model_files/digit/visual/arm-L3-mirror.obj</uri>
+        </mesh>    
+        </geometry>
+    </visual>
+    <collision name="collision_0000">
+        <pose relative_to="shoulder_yaw_joint_right">0 0 0 0 0 -0.3926991</pose>
+        <geometry>
+        <mesh> 
+            <uri>package://drail_drake/model_files/digit/collision/arm-L3-mirror_parts/arm-L3-mirror_convex_piece_000.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+    <collision name="collision_0001">
+        <pose relative_to="shoulder_yaw_joint_right">0 0 0 0 0 -0.3926991</pose>
+        <geometry>
+        <mesh> 
+            <uri>package://drail_drake/model_files/digit/collision/arm-L3-mirror_parts/arm-L3-mirror_convex_piece_001.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+    <collision name="collision_0002">
+        <pose relative_to="shoulder_yaw_joint_right">0 0 0 0 0 -0.3926991</pose>
+        <geometry>
+        <mesh> 
+            <uri>package://drail_drake/model_files/digit/collision/arm-L3-mirror_parts/arm-L3-mirror_convex_piece_002.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+    <collision name="collision_0003">
+        <pose relative_to="shoulder_yaw_joint_right">0 0 0 0 0 -0.3926991</pose>
+        <geometry>
+        <mesh> 
+            <uri>package://drail_drake/model_files/digit/collision/arm-L3-mirror_parts/arm-L3-mirror_convex_piece_003.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+</link>
+<link name="right_elbow">
+    <inertial>
+        <pose>0.107996 -0.000521 -0.017765 0 0 0</pose>
+        <mass>0.550582</mass>
+        <inertia>
+        <ixx>0.000476</ixx>
+        <iyy>0.009564</iyy>
+        <izz>9.437e-03</izz>
+        <ixy>2.9e-05</ixy>
+        <ixz>0.001403</ixz>
+        <iyz>-9e-06</iyz>
+        </inertia>
+    </inertial>
+    <visual name="arm_l4_visual">
+        <pose relative_to="elbow_joint_right">0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh> 
+            <uri>package://drail_drake/model_files/digit/visual/arm-L4-mirror.obj</uri>
+        </mesh>    
+        </geometry>
+    </visual>
+    <collision name="collision_0000">
+        <pose relative_to="elbow_joint_right">0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh> 
+            <uri>package://drail_drake/model_files/digit/collision/arm-L4-mirror_parts/arm-L4-mirror_convex_piece_000.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+    <collision name="collision_0001">
+        <pose relative_to="elbow_joint_right">0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh> 
+            <uri>package://drail_drake/model_files/digit/collision/arm-L4-mirror_parts/arm-L4-mirror_convex_piece_001.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+    <collision name="collision_0002">
+        <pose relative_to="elbow_joint_right">0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh> 
+            <uri>package://drail_drake/model_files/digit/collision/arm-L4-mirror_parts/arm-L4-mirror_convex_piece_002.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+    <collision name="collision_0003">
+        <pose relative_to="elbow_joint_right">0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh> 
+            <uri>package://drail_drake/model_files/digit/collision/arm-L4-mirror_parts/arm-L4-mirror_convex_piece_003.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+    <collision name="collision_0004">
+        <pose relative_to="elbow_joint_right">0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh> 
+            <uri>package://drail_drake/model_files/digit/collision/arm-L4-mirror_parts/arm-L4-mirror_convex_piece_004.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+    <collision name="collision_0005">
+        <pose relative_to="elbow_joint_right">0 0 0 0 0 0</pose>
+        <geometry>
+        <mesh> 
+            <uri>package://drail_drake/model_files/digit/collision/arm-L4-mirror_parts/arm-L4-mirror_convex_piece_005.obj</uri>
+            <drake:declare_convex/>
+        </mesh>
+        </geometry>
+    </collision>
+</link>
+<joint name="shoulder_pitch_joint_right" type="continuous">
+    <pose relative_to="right_shoulder_roll">-0.00317 0.011055 0.0555 -1.57079632679 -0.279253 0</pose>
+    <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+            <lower>-2.5307</lower>
+            <upper>2.5307</upper>
+            <effort>1.4</effort>
+            <velocity>12.5</velocity>
+        </limit>
+    </axis>
+    <parent>right_shoulder_roll</parent>
+    <child>right_shoulder_pitch</child>
+    <drake:gear_ratio>80</drake:gear_ratio>
+    <drake:rotor_inertia>0.173824</drake:rotor_inertia>
+</joint>
+<joint name="shoulder_yaw_joint_right" type="continuous">
+    <pose relative_to="shoulder_pitch_joint_right">0 0.165 -0.1 -1.57079632679 0 0</pose>
+    <axis>
+        <xyz>0 0 1</xyz>
+        <limit> 
+            <lower>-1.7453</lower>
+            <upper>1.7453</upper>
+            <effort>1.4</effort>
+            <velocity>10</velocity>
+        </limit>
+    </axis>
+    <parent>right_shoulder_pitch</parent>
+    <child>right_shoulder_yaw</child>
+    <drake:gear_ratio>50</drake:gear_ratio>
+    <drake:rotor_inertia>0.0679</drake:rotor_inertia>
+</joint>
+<joint name="elbow_joint_right" type="continuous">
+    <pose relative_to="shoulder_yaw_joint_right">0 0.0385 0.185 -1.57079632679 0 -0.3926991</pose>
+    <axis> 
+        <xyz>0 0 1</xyz>
+        <limit>
+            <lower>-1.3526</lower>
+            <upper>1.3526</upper>
+            <effort>1.4</effort>
+            <velocity>12.5</velocity>
+        </limit> 
+    </axis>
+    <parent>right_shoulder_yaw</parent>
+    <child>right_elbow</child>
+    <drake:gear_ratio>80</drake:gear_ratio>
+    <drake:rotor_inertia>0.173824</drake:rotor_inertia>
+</joint>
+</model>
+</sdf>
