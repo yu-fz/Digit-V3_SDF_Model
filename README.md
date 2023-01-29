@@ -1,8 +1,8 @@
 # SDF Model File for Digit V3 from Agility Robotics
 
-<center>
-    <img src="./readme/digit_screenshot.png" alt="digit_visual_mesh" width="400">
-</center>
+<p align="center">
+  <img src="./readme/digit_screenshot.png" alt="digit_visual_mesh" width="400"/>
+</p>
 
 #
 
@@ -12,9 +12,9 @@ The SDF models are created with Drake in mind, and includes Drake-namespaced SDF
 
 Collision meshes for the digit-v3 upper body is generated from running [convex decomposition](https://github.com/gizatt/convex_decomp_to_sdf) of the visual-3D meshes for more accurate collisions.
 
-<center>
+<p align="center">
     <img src="./readme/digit_collision.png" alt="digit_collision_mesh" width="300">
-</center>
+</p>
 
 Model parameters in these model files are derived from the official digit-v3.mjcf mujoco model file from Agility Robotics. 
 
