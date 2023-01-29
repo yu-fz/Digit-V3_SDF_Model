@@ -10,7 +10,9 @@ This package hosts SDF model files for the digit-v3 robot, along with its associ
 
 The SDF models are created with Drake in mind, and includes Drake-namespaced SDF tags to represent actuator dynamics that may be unsupported with other parsers.
 
-Collision meshes for the digit-v3 upper body is generated from running [convex decomposition](https://github.com/gizatt/convex_decomp_to_sdf) of the visual-3D meshes for more accurate collisions.
+The visual meshes used in this model was taken from the digit-v3 [URDF model repo.](https://github.com/adubredu/DigitRobot.jl) 
+
+Collision meshes for the digit-v3 upper body is generated from running [convex decomposition](https://github.com/gizatt/convex_decomp_to_sdf) of the visual 3D meshes for more accurate collisions.
 
 <p align="center">
     <img src="./readme/digit_collision.png" alt="digit_collision_mesh" width="300">
