@@ -3,27 +3,27 @@
 <model name="digit">
 <pose>0 0 0 0 0 0</pose>
     <include> 
-        <uri>package://drail_drake/model_files/digit/digit_torso.sdf</uri>
+        <uri>package://digit_sdf_model/digit_torso.sdf</uri>
         <pose>0 0 0 0 0 0</pose>
         <name>digit_torso</name>
     </include>
     <include>
-        <uri>package://drail_drake/model_files/digit/digit_left_arm.sdf</uri>
+        <uri>package://digit_sdf_model/digit_left_arm.sdf</uri>
         <pose relative_to="digit_torso">-0.001 0.12 0.4 0 -1.5708 0</pose>
         <name>digit_left_arm</name>
     </include>
     <include>
-        <uri>package://drail_drake/model_files/digit/digit_right_arm.sdf</uri>
+        <uri>package://digit_sdf_model/digit_right_arm.sdf</uri>
         <pose relative_to="digit_torso">-0.001 -0.12 0.4 0 -1.5708 0</pose>
         <name>digit_right_arm</name>
     </include>
     <include>
-        <uri>package://drail_drake/model_files/digit/digit_left_leg.sdf</uri>
+        <uri>package://digit_sdf_model/digit_left_leg.sdf</uri>
         <pose relative_to="digit_torso">-0.001 0.091 0 0 -1.5708 0</pose>
         <name>digit_left_leg</name>
     </include>
     <include>
-        <uri>package://drail_drake/model_files/digit/digit_right_leg.sdf</uri>
+        <uri>package://digit_sdf_model/digit_right_leg.sdf</uri>
         <pose relative_to="digit_torso">-0.001 -0.091 0 0 -1.5708 0</pose>
         <name>digit_right_leg</name>
     </include>

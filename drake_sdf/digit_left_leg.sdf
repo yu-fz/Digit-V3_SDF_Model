@@ -19,7 +19,7 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/hip-yaw-housing.obj</uri> 
+            <uri>package://digit_sdf_model/visual/hip-yaw-housing.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -42,7 +42,7 @@
         <pose relative_to="left_hip_yaw_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/visual/hip-pitch-housing.obj</uri> 
+            <uri>package://digit_sdf_model/visual/hip-pitch-housing.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -65,7 +65,7 @@
         <pose relative_to="left_hip_pitch_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/hip-pitch.obj</uri> 
+            <uri>package://digit_sdf_model/visual/hip-pitch.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -114,7 +114,7 @@
         <pose relative_to="left_achilles_rod">0 0 0 0 0 0</pose>
         <geometry>
             <mesh>
-                <uri>package://drail_drake/model_files/digit/visual/achilles-rod.obj</uri>
+                <uri>package://digit_sdf_model/visual/achilles-rod.obj</uri>
             </mesh>
         </geometry>
     </visual>
@@ -154,7 +154,7 @@
         <pose relative_to="left_knee_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/knee.obj</uri> 
+            <uri>package://digit_sdf_model/visual/knee.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -177,7 +177,7 @@
         <pose relative_to="left_knee_to_shin_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/shin-no-shell.obj</uri> 
+            <uri>package://digit_sdf_model/visual/shin-no-shell.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -218,7 +218,7 @@
         <pose relative_to="left_shin_to_tarsus_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/tarsus.obj</uri> 
+            <uri>package://digit_sdf_model/visual/tarsus.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -258,7 +258,7 @@
         <pose relative_to="left_heel_spring_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/heel-spring.obj</uri> 
+            <uri>package://digit_sdf_model/visual/heel-spring.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -289,7 +289,7 @@
         <pose relative_to="left_toe_A">0 0 0 3.14159 1.5526449 -1.5708</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/toe-output.obj</uri> 
+            <uri>package://digit_sdf_model/visual/toe-output.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -321,7 +321,7 @@
         <pose relative_to="left_toe_A_rod">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/toe-A-rod.obj</uri> 
+            <uri>package://digit_sdf_model/visual/toe-A-rod.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -369,7 +369,7 @@
         <pose relative_to="left_toe_B_joint">0 0 0 1.5708 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/toe-output.obj</uri> 
+            <uri>package://digit_sdf_model/visual/toe-output.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -401,7 +401,7 @@
         <pose relative_to="left_toe_B_rod_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/toe-B-rod.obj</uri> 
+            <uri>package://digit_sdf_model/visual/toe-B-rod.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -449,7 +449,7 @@
         <pose relative_to="left_toe_pitch_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/toe-pitch.obj</uri> 
+            <uri>package://digit_sdf_model/visual/toe-pitch.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -472,7 +472,7 @@
         <pose relative_to="left_toe_roll_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/toe-roll.obj</uri> 
+            <uri>package://digit_sdf_model/visual/toe-roll.obj</uri> 
         </mesh>
         </geometry>
     </visual>
