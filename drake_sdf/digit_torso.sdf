@@ -17,7 +17,7 @@
     <visual name="torso_visual">
         <geometry>
             <mesh>
-                <uri>package://drail_drake/model_files/digit/visual/torso.obj</uri>
+                <uri>package://digit_sdf_model/visual/torso.obj</uri>
             </mesh>
         </geometry>
     </visual>
@@ -25,7 +25,7 @@
         <pose>-0.001 0.12 0.4 -0.174533 -1.5708 0</pose>
         <geometry>
             <mesh>
-                <uri>package://drail_drake/model_files/digit/visual/shoulder-roll-housing.obj</uri>
+                <uri>package://digit_sdf_model/visual/shoulder-roll-housing.obj</uri>
             </mesh>
         </geometry>
     </visual>
@@ -33,7 +33,7 @@
         <pose>0.001 -0.12 0.4 0.174533 -1.5708 0</pose>
         <geometry>
             <mesh>
-                <uri>package://drail_drake/model_files/digit/visual/shoulder-roll-housing-mirror.obj</uri>
+                <uri>package://digit_sdf_model/visual/shoulder-roll-housing-mirror.obj</uri>
             </mesh>
         </geometry>
     </visual>
@@ -41,7 +41,7 @@
         <pose>-0.001 0.09 0.0 0 -1.5708 0</pose>
         <geometry>
             <mesh>
-                <uri>package://drail_drake/model_files/digit/visual/hip-roll-housing.obj</uri>
+                <uri>package://digit_sdf_model/visual/hip-roll-housing.obj</uri>
             </mesh>
         </geometry>
     </visual>
@@ -49,14 +49,14 @@
         <pose>-0.001 -0.09 0 0 -1.5708 0</pose>
         <geometry>
             <mesh>
-                <uri>package://drail_drake/model_files/digit/visual/hip-roll-housing-mirror.obj</uri>
+                <uri>package://digit_sdf_model/visual/hip-roll-housing-mirror.obj</uri>
             </mesh>
         </geometry>
     </visual>
     <collision name="collision_0000">
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/collision/torso_parts/torso_convex_piece_000.obj</uri>
+            <uri>package://digit_sdf_model/collision/torso_parts/torso_convex_piece_000.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -64,7 +64,7 @@
     <collision name="collision_0001">
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/torso_parts/torso_convex_piece_001.obj</uri>
+            <uri>package://digit_sdf_model/collision/torso_parts/torso_convex_piece_001.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -72,7 +72,7 @@
     <collision name="collision_0002">
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/torso_parts/torso_convex_piece_002.obj</uri>
+            <uri>package://digit_sdf_model/collision/torso_parts/torso_convex_piece_002.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -80,7 +80,7 @@
     <collision name="collision_0003">
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/torso_parts/torso_convex_piece_003.obj</uri>
+            <uri>package://digit_sdf_model/collision/torso_parts/torso_convex_piece_003.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -88,7 +88,7 @@
     <collision name="collision_0004">
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/torso_parts/torso_convex_piece_004.obj</uri>
+            <uri>package://digit_sdf_model/collision/torso_parts/torso_convex_piece_004.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -96,7 +96,7 @@
     <collision name="collision_0005">
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/torso_parts/torso_convex_piece_005.obj</uri>
+            <uri>package://digit_sdf_model/collision/torso_parts/torso_convex_piece_005.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -104,7 +104,7 @@
     <collision name="collision_0006">
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/torso_parts/torso_convex_piece_006.obj</uri>
+            <uri>package://digit_sdf_model/collision/torso_parts/torso_convex_piece_006.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -112,7 +112,7 @@
     <collision name="collision_0007">
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/torso_parts/torso_convex_piece_007.obj</uri>
+            <uri>package://digit_sdf_model/collision/torso_parts/torso_convex_piece_007.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -120,7 +120,7 @@
     <collision name="collision_0008">
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/torso_parts/torso_convex_piece_008.obj</uri>
+            <uri>package://digit_sdf_model/collision/torso_parts/torso_convex_piece_008.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -128,7 +128,7 @@
     <collision name="collision_0009">
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/torso_parts/torso_convex_piece_009.obj</uri>
+            <uri>package://digit_sdf_model/collision/torso_parts/torso_convex_piece_009.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -136,7 +136,7 @@
     <collision name="collision_0010">
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/torso_parts/torso_convex_piece_010.obj</uri>
+            <uri>package://digit_sdf_model/collision/torso_parts/torso_convex_piece_010.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -144,7 +144,7 @@
     <collision name="collision_0011">
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/torso_parts/torso_convex_piece_011.obj</uri>
+            <uri>package://digit_sdf_model/collision/torso_parts/torso_convex_piece_011.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -152,7 +152,7 @@
     <collision name="collision_0012">
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/torso_parts/torso_convex_piece_012.obj</uri>
+            <uri>package://digit_sdf_model/collision/torso_parts/torso_convex_piece_012.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -160,7 +160,7 @@
     <collision name="collision_0013">
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/torso_parts/torso_convex_piece_013.obj</uri>
+            <uri>package://digit_sdf_model/collision/torso_parts/torso_convex_piece_013.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -168,7 +168,7 @@
     <collision name="collision_0014">
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/torso_parts/torso_convex_piece_014.obj</uri>
+            <uri>package://digit_sdf_model/collision/torso_parts/torso_convex_piece_014.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -176,7 +176,7 @@
     <collision name="collision_0015">
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/torso_parts/torso_convex_piece_015.obj</uri>
+            <uri>package://digit_sdf_model/collision/torso_parts/torso_convex_piece_015.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -184,7 +184,7 @@
     <collision name="collision_0016">
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/torso_parts/torso_convex_piece_016.obj</uri>
+            <uri>package://digit_sdf_model/collision/torso_parts/torso_convex_piece_016.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -192,7 +192,7 @@
     <collision name="collision_0017">
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/torso_parts/torso_convex_piece_017.obj</uri>
+            <uri>package://digit_sdf_model/collision/torso_parts/torso_convex_piece_017.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>

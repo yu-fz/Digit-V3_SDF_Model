@@ -1,7 +1,6 @@
 <?xml version='1.0'?>
 <sdf xmlns:drake="http://drake.mit.edu" version="1.9">
 <model name="digit_left_arm">
-<!-- <pose>0 0 0 0 0 0</pose> -->
 <link name="left_shoulder_roll">
     <pose>0 0 0 0 0 0</pose>
     <inertial>
@@ -17,12 +16,10 @@
         </inertia>
     </inertial>
     <visual name="arm_l1_visual">
-        <!-- <pose relative_to="left_shoulder_roll">0 0 0 0 0 -0.279253</pose> -->
         <pose relative_to="left_shoulder_roll">0 0 0 0 0 0</pose>
-
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/arm-L1.obj</uri> 
+            <uri>package://digit_sdf_model/visual/arm-L1.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -30,7 +27,7 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/collision/arm-L1_parts/arm-L1_convex_piece_000.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L1_parts/arm-L1_convex_piece_000.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -39,7 +36,7 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>   
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/arm-L1_parts/arm-L1_convex_piece_001.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L1_parts/arm-L1_convex_piece_001.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -48,7 +45,7 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/arm-L1_parts/arm-L1_convex_piece_002.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L1_parts/arm-L1_convex_piece_002.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -57,7 +54,7 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/arm-L1_parts/arm-L1_convex_piece_003.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L1_parts/arm-L1_convex_piece_003.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -66,7 +63,7 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/arm-L1_parts/arm-L1_convex_piece_004.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L1_parts/arm-L1_convex_piece_004.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -75,7 +72,7 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/arm-L1_parts/arm-L1_convex_piece_005.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L1_parts/arm-L1_convex_piece_005.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -84,7 +81,7 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/arm-L1_parts/arm-L1_convex_piece_006.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L1_parts/arm-L1_convex_piece_006.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -93,7 +90,7 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/collision/arm-L1_parts/arm-L1_convex_piece_007.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L1_parts/arm-L1_convex_piece_007.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -116,7 +113,7 @@
         <pose relative_to="shoulder_pitch_joint_left">0 0 0 0 0 0</pose>
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/visual/arm-L2.obj</uri>
+            <uri>package://digit_sdf_model/visual/arm-L2.obj</uri>
         </mesh>    
         </geometry>
     </visual>
@@ -124,7 +121,7 @@
         <pose relative_to="shoulder_pitch_joint_left">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/collision/arm-L2_parts/arm-L2_convex_piece_000.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L2_parts/arm-L2_convex_piece_000.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -133,7 +130,7 @@
         <pose relative_to="shoulder_pitch_joint_left">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/collision/arm-L2_parts/arm-L2_convex_piece_001.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L2_parts/arm-L2_convex_piece_001.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -142,7 +139,7 @@
         <pose relative_to="shoulder_pitch_joint_left">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/collision/arm-L2_parts/arm-L2_convex_piece_002.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L2_parts/arm-L2_convex_piece_002.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -151,7 +148,7 @@
         <pose relative_to="shoulder_pitch_joint_left">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/collision/arm-L2_parts/arm-L2_convex_piece_003.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L2_parts/arm-L2_convex_piece_003.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -174,7 +171,7 @@
         <pose relative_to="shoulder_yaw_joint_left">0 0 0 0 0 0.3926991</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/arm-L3.obj</uri>
+            <uri>package://digit_sdf_model/visual/arm-L3.obj</uri>
         </mesh>    
         </geometry>
     </visual>
@@ -182,7 +179,7 @@
         <pose relative_to="shoulder_yaw_joint_left">0 0 0 0 0 0.3926991</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/collision/arm-L3_parts/arm-L3_convex_piece_000.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L3_parts/arm-L3_convex_piece_000.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -191,7 +188,7 @@
         <pose relative_to="shoulder_yaw_joint_left">0 0 0 0 0 0.3926991</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/collision/arm-L3_parts/arm-L3_convex_piece_001.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L3_parts/arm-L3_convex_piece_001.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -200,7 +197,7 @@
         <pose relative_to="shoulder_yaw_joint_left">0 0 0 0 0 0.3926991</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/collision/arm-L3_parts/arm-L3_convex_piece_002.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L3_parts/arm-L3_convex_piece_002.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -209,7 +206,7 @@
         <pose relative_to="shoulder_yaw_joint_left">0 0 0 0 0 0.3926991</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/collision/arm-L3_parts/arm-L3_convex_piece_003.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L3_parts/arm-L3_convex_piece_003.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -232,7 +229,7 @@
         <pose relative_to="elbow_joint_left">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/arm-L4.obj</uri>
+            <uri>package://digit_sdf_model/visual/arm-L4.obj</uri>
         </mesh>    
         </geometry>
     </visual>
@@ -240,7 +237,7 @@
         <pose relative_to="elbow_joint_left">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/collision/arm-L4_parts/arm-L4_convex_piece_000.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L4_parts/arm-L4_convex_piece_000.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -249,7 +246,7 @@
         <pose relative_to="elbow_joint_left">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/collision/arm-L4_parts/arm-L4_convex_piece_001.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L4_parts/arm-L4_convex_piece_001.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -258,7 +255,7 @@
         <pose relative_to="elbow_joint_left">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/collision/arm-L4_parts/arm-L4_convex_piece_002.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L4_parts/arm-L4_convex_piece_002.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -267,7 +264,7 @@
         <pose relative_to="elbow_joint_left">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/collision/arm-L4_parts/arm-L4_convex_piece_003.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L4_parts/arm-L4_convex_piece_003.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -276,7 +273,7 @@
         <pose relative_to="elbow_joint_left">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/collision/arm-L4_parts/arm-L4_convex_piece_004.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L4_parts/arm-L4_convex_piece_004.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
@@ -285,7 +282,7 @@
         <pose relative_to="elbow_joint_left">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/collision/arm-L4_parts/arm-L4_convex_piece_005.obj</uri>
+            <uri>package://digit_sdf_model/collision/arm-L4_parts/arm-L4_convex_piece_005.obj</uri>
             <drake:declare_convex/>
         </mesh>
         </geometry>
