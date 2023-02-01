@@ -1,5 +1,5 @@
 <?xml version='1.0'?>
-<sdf xmlns:drake="http://drake.mit.edu" version="1.9">
+<sdf version="1.9">
 <model name="digit_left_leg">
 <link name="left_hip_roll">
     <pose>0 0 0 0 0 0 </pose>
@@ -19,7 +19,7 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/hip-yaw-housing.obj</uri> 
+            <uri>package://digit_sdf_model/visual/hip-yaw-housing.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -42,7 +42,7 @@
         <pose relative_to="left_hip_yaw_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh>
-            <uri>package://drail_drake/model_files/digit/visual/hip-pitch-housing.obj</uri> 
+            <uri>package://digit_sdf_model/visual/hip-pitch-housing.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -65,7 +65,7 @@
         <pose relative_to="left_hip_pitch_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/hip-pitch.obj</uri> 
+            <uri>package://digit_sdf_model/visual/hip-pitch.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -114,7 +114,7 @@
         <pose relative_to="left_knee_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/knee.obj</uri> 
+            <uri>package://digit_sdf_model/visual/knee.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -137,7 +137,7 @@
         <pose relative_to="left_knee_to_shin_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/shin.obj</uri> 
+            <uri>package://digit_sdf_model/visual/shin.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -178,7 +178,7 @@
         <pose relative_to="left_shin_to_tarsus_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/tarsus.obj</uri> 
+            <uri>package://digit_sdf_model/visual/tarsus.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -218,7 +218,7 @@
         <pose relative_to="left_toe_pitch_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/toe-pitch.obj</uri> 
+            <uri>package://digit_sdf_model/visual/toe-pitch.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -241,7 +241,7 @@
         <pose relative_to="left_toe_roll_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://drail_drake/model_files/digit/visual/toe-roll.obj</uri> 
+            <uri>package://digit_sdf_model/visual/toe-roll.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -267,8 +267,6 @@
     </axis>
     <parent>left_hip_roll</parent>
     <child>left_hip_yaw</child>
-    <drake:gear_ratio>50</drake:gear_ratio>
-    <drake:rotor_inertia>0.0679</drake:rotor_inertia>
 </joint>
 <joint name="left_hip_pitch_joint" type="continuous">
     <pose relative_to="left_hip_yaw_joint">0 0.004 0.068 -1.57079632679 -0.785398163397 3.14159265359</pose>
@@ -283,8 +281,6 @@
     </axis>
     <parent>left_hip_yaw</parent>
     <child>left_hip_pitch</child>
-    <drake:gear_ratio>16</drake:gear_ratio>
-    <drake:rotor_inertia>0.120473</drake:rotor_inertia>
 </joint>
 <joint name="left_knee_joint" type="continuous">
     <pose relative_to="left_hip_pitch_joint">0.12 0 0.0045 0 0 -1.57079632679</pose>
@@ -299,8 +295,6 @@
     </axis>
     <parent>left_hip_pitch</parent>
     <child>left_knee</child>
-    <drake:gear_ratio>16</drake:gear_ratio>
-    <drake:rotor_inertia>0.120473</drake:rotor_inertia>
 </joint>
 <joint name="left_knee_to_shin_joint" type="fixed">
     <pose relative_to="left_knee_joint">0.060677 0.047406 0 0 0 0</pose>
@@ -318,8 +312,6 @@
     </axis>
     <parent>left_knee</parent>
     <child>left_shin</child>
-    <drake:gear_ratio>16</drake:gear_ratio>
-    <drake:rotor_inertia>0.120473</drake:rotor_inertia>
 </joint>
 <joint name="left_shin_to_tarsus_joint" type="continuous">
     <pose relative_to="left_knee_to_shin_joint">0.434759 0.02 0 0 0 1.79769</pose>
@@ -334,8 +326,6 @@
     </axis>
     <parent>left_shin</parent>
     <child>left_tarsus</child>
-    <drake:gear_ratio>16</drake:gear_ratio>
-    <drake:rotor_inertia>0.120473</drake:rotor_inertia>
 </joint>
 <joint name="left_toe_pitch_joint" type="continuous">
     <pose relative_to="left_shin_to_tarsus_joint">0.408 -0.04 0 0 0 1.1956</pose>
@@ -350,8 +340,6 @@
     </axis>
     <parent>left_tarsus</parent>
     <child>left_toe_pitch</child>
-    <drake:gear_ratio>16</drake:gear_ratio>
-    <drake:rotor_inertia>0.120473</drake:rotor_inertia>
 </joint>
 <joint name="left_toe_roll_joint" type="continuous">
     <pose relative_to="left_toe_pitch_joint">0 0 0 0 1.5708 0</pose>
@@ -366,8 +354,6 @@
     </axis>
     <parent>left_toe_pitch</parent>
     <child>left_toe_roll</child>
-    <drake:gear_ratio>16</drake:gear_ratio>
-    <drake:rotor_inertia>0.120473</drake:rotor_inertia>
 </joint>
 </model>
 </sdf>
