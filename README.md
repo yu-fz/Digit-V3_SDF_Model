@@ -13,17 +13,17 @@ The model files are split between drake specific SDF and regular SDF versions. T
 The passive (no actuation commanded) closed loop model has been tested to load successfully into drake with a sim step size of 0.0002(s). 
 
 <p align="center">
-    <img src="./readme/closed_loop_digit.png" alt="digit_with_closed_loop" width="300">
+    <img src="./readme/digit_closed_loop_visual.png" alt="digit_with_closed_loop" width="300">
 </p>
 
 The visual meshes used in this model was adapted from the digit-v3 [URDF model repo.](https://github.com/adubredu/DigitRobot.jl) 
 
 Collision meshes for the digit-v3 upper body is generated from running [convex decomposition](https://github.com/gizatt/convex_decomp_to_sdf) of the visual 3D meshes for more accurate collisions.
 
-<p align="center">
-    <img src="./readme/digit_collision.png" alt="digit_collision_mesh" width="300">
+<p align="middle">
+      <img src="./readme/digit_collision_0.png" alt="digit_collision_mesh" width="300">
+      <img src="./readme/digit_collision_1.png" alt="digit_collision_mesh" width="300">
 </p>
-
 Model parameters in these model files are derived from the official digit-v3.mjcf mujoco model file from Agility Robotics. 
 
 Permission to repackage and re-distribute software from Agility Robotics hereby granted under: 

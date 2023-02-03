@@ -23,6 +23,22 @@
         </mesh>
         </geometry>
     </visual>
+    <collision name="left_hip_roll_collision_0000">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-yaw-housing_parts/hip-yaw-housing_convex_piece_000.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="left_hip_roll_collision_0001">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-yaw-housing_parts/hip-yaw-housing_convex_piece_001.obj</uri>
+          </mesh>
+        </geometry>
+    </collision>
 </link>
 <link name="left_hip_yaw">
     <pose>0 0 0 0 0 0 </pose>
@@ -69,30 +85,36 @@
         </mesh>
         </geometry>
     </visual>
-    <collision name="left_hip_geom_1">
-        <pose relative_to="left_hip_pitch_joint">0 0 -0.044 0 0 0</pose>
+    <collision name="left_hip_pitch_collision_000">
+        <pose relative_to="left_hip_pitch_joint">0 0 0 0 0 0</pose>
         <geometry>
-            <cylinder>
-                <radius>0.05</radius>
-                <length>0.072</length>
-            </cylinder>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-pitch_parts/hip-pitch_convex_piece_000.obj</uri>
+          </mesh>
         </geometry>
     </collision>
-    <collision name="left_hip_geom_2">
-        <pose relative_to="left_hip_pitch_joint">0.12 0 -0.04 0 0 0</pose>
+    <collision name="left_hip_pitch_collision_001">
+        <pose relative_to="left_hip_pitch_joint">0 0 0 0 0 0</pose>
         <geometry>
-            <cylinder>
-                <radius>0.05</radius>
-                <length>0.072</length>
-            </cylinder>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-pitch_parts/hip-pitch_convex_piece_001.obj</uri>
+          </mesh>
         </geometry>
     </collision>
-    <collision name="left_hip_geom_3">
-        <pose relative_to="left_hip_pitch_joint">0.06 0 -0.04 0 0 0</pose>
+    <collision name="left_hip_pitch_collision_002">
+        <pose relative_to="left_hip_pitch_joint">0 0 0 0 0 0</pose>
         <geometry>
-            <box>
-                <size>0.06 0.05 0.072</size>
-            </box>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-pitch_parts/hip-pitch_convex_piece_002.obj</uri>
+          </mesh>
+        </geometry>
+    </collision>
+    <collision name="left_hip_pitch_collision_003">
+        <pose relative_to="left_hip_pitch_joint">0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-pitch_parts/hip-pitch_convex_piece_003.obj</uri>
+          </mesh>
         </geometry>
     </collision>
 </link>
@@ -146,7 +168,7 @@
         <geometry>
             <cylinder>
                 <radius>0.03</radius>
-                <length>0.1715</length>
+                <length>0.343</length>
             </cylinder>
         </geometry>
     </collision>
@@ -155,7 +177,7 @@
         <geometry>
             <cylinder>
                 <radius>0.05</radius>
-                <length>0.1</length>
+                <length>0.2</length>
             </cylinder>
         </geometry>
     </collision>
@@ -182,21 +204,36 @@
         </mesh>
         </geometry>
     </visual>
-    <collision name="left_tarsus_geom_1">
-        <pose relative_to="left_shin_to_tarsus_joint">0.21 -0.03 0 0 1.5708 0</pose>
+    <collision name="left_tarsus_collision_0000">
+        <pose relative_to="left_shin_to_tarsus_joint">0 0 0 0 0 0</pose>
         <geometry>
-            <capsule>
-                <radius>0.02</radius>
-                <length>0.18</length>
-            </capsule>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/tarsus_parts/tarsus_convex_piece_000.obj</uri>
+          </mesh>
         </geometry>
     </collision>
-    <collision name="left_tarsus_geom_2">
-        <pose relative_to="left_shin_to_tarsus_joint">-0.07 -0.012 0 0.0873 0 1.13446</pose>
+    <collision name="left_tarsus_collision_001">
+        <pose relative_to="left_shin_to_tarsus_joint">0 0 0 0 0 0</pose>
         <geometry>
-            <box>
-                <size>0.007 0.07 0.03</size>
-            </box>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/tarsus_parts/tarsus_convex_piece_001.obj</uri>
+          </mesh>
+        </geometry>
+    </collision>
+    <collision name="left_tarsus_geom_collision_002">
+        <pose relative_to="left_shin_to_tarsus_joint">0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/tarsus_parts/tarsus_convex_piece_002.obj</uri>
+          </mesh>
+        </geometry>
+    </collision>
+    <collision name="left_tarsus_collison_003">
+        <pose relative_to="left_shin_to_tarsus_joint">0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/tarsus_parts/tarsus_convex_piece_003.obj</uri>
+          </mesh>
         </geometry>
     </collision>
 </link>

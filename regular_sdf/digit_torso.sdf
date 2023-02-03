@@ -17,7 +17,7 @@
     <visual name="torso_visual">
         <geometry>
             <mesh>
-                <uri>package://digit_sdf_model/visual/torso.obj</uri>
+                <uri>package://drail_drake/model_files/digit/visual/torso.obj</uri>
             </mesh>
         </geometry>
     </visual>
@@ -25,34 +25,178 @@
         <pose>-0.001 0.12 0.4 -0.174533 -1.5708 0</pose>
         <geometry>
             <mesh>
-                <uri>package://digit_sdf_model/visual/shoulder-roll-housing.obj</uri>
+                <uri>package://drail_drake/model_files/digit/visual/shoulder-roll-housing.obj</uri>
             </mesh>
         </geometry>
     </visual>
+    <collision name="left_shoulder_cap_collision_0000">
+        <pose>-0.001 0.12 0.4 -0.174533 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/shoulder-roll-housing_parts/shoulder-roll-housing_convex_piece_000.obj</uri>
+          </mesh>
+        </geometry>
+    </collision>
+      <collision name="left_shoulder_cap_collision_0001">
+        <pose>-0.001 0.12 0.4 -0.174533 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/shoulder-roll-housing_parts/shoulder-roll-housing_convex_piece_001.obj</uri>
+          </mesh>
+        </geometry>
+    </collision>
+    <collision name="left_shoulder_cap_collision_0002">
+        <pose>-0.001 0.12 0.4 -0.174533 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/shoulder-roll-housing_parts/shoulder-roll-housing_convex_piece_002.obj</uri>
+          </mesh>
+        </geometry>
+    </collision>
+    <collision name="left_shoulder_cap_collision_0003">
+        <pose>-0.001 0.12 0.4 -0.174533 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/shoulder-roll-housing_parts/shoulder-roll-housing_convex_piece_003.obj</uri>
+          </mesh>
+        </geometry>
+    </collision>
+    <collision name="left_shoulder_cap_collision_0004">
+        <pose>-0.001 0.12 0.4 -0.174533 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/shoulder-roll-housing_parts/shoulder-roll-housing_convex_piece_003.obj</uri>
+          </mesh>
+        </geometry>
+    </collision>
     <visual name="right_shoulder_cap_visual">
         <pose>0.001 -0.12 0.4 0.174533 -1.5708 0</pose>
         <geometry>
             <mesh>
-                <uri>package://digit_sdf_model/visual/shoulder-roll-housing-mirror.obj</uri>
+                <uri>package://drail_drake/model_files/digit/visual/shoulder-roll-housing-mirror.obj</uri>
             </mesh>
         </geometry>
     </visual>
+    <collision name="right_shoulder_cap_collision_0000">
+        <pose>0.001 -0.12 0.4 0.174533 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/shoulder-roll-housing-mirror_parts/shoulder-roll-housing-mirror_convex_piece_000.obj</uri>
+          </mesh>
+        </geometry>
+    </collision>
+      <collision name="right_shoulder_cap_collision_0001">
+        <pose>0.001 -0.12 0.4 0.174533 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/shoulder-roll-housing-mirror_parts/shoulder-roll-housing-mirror_convex_piece_001.obj</uri>
+          </mesh>
+        </geometry>
+    </collision>
+      <collision name="right_shoulder_cap_collision_0002">
+        <pose>0.001 -0.12 0.4 0.174533 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/shoulder-roll-housing-mirror_parts/shoulder-roll-housing-mirror_convex_piece_002.obj</uri>
+          </mesh>
+        </geometry>
+    </collision>
+      <collision name="right_shoulder_cap_collision_0003">
+        <pose>0.001 -0.12 0.4 0.174533 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/shoulder-roll-housing-mirror_parts/shoulder-roll-housing-mirror_convex_piece_003.obj</uri>
+          </mesh>
+        </geometry>
+    </collision>
+      <collision name="right_shoulder_cap_collision_0004">
+        <pose>0.001 -0.12 0.4 0.174533 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/shoulder-roll-housing-mirror_parts/shoulder-roll-housing-mirror_convex_piece_003.obj</uri>
+          </mesh>
+        </geometry>
+    </collision>
     <visual name="left_waist_cap_visual">
         <pose>-0.001 0.09 0.0 0 -1.5708 0</pose>
         <geometry>
             <mesh>
-                <uri>package://digit_sdf_model/visual/hip-roll-housing.obj</uri>
+                <uri>package://drail_drake/model_files/digit/visual/hip-roll-housing.obj</uri>
             </mesh>
         </geometry>
     </visual>
+    <collision name="left_waist_cap_collision_0000">
+        <pose>-0.001 0.09 0.0 0 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-roll-housing_parts/hip-roll-housing_convex_piece_000.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="left_waist_cap_collision_0001">
+        <pose>-0.001 0.09 0.0 0 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-roll-housing_parts/hip-roll-housing_convex_piece_001.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="left_waist_cap_collision_0002">
+        <pose>-0.001 0.09 0.0 0 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-roll-housing_parts/hip-roll-housing_convex_piece_002.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="left_waist_cap_collision_0003">
+        <pose>-0.001 0.09 0.0 0 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-roll-housing_parts/hip-roll-housing_convex_piece_003.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     <visual name="right_waist_cap_visual">
         <pose>-0.001 -0.09 0 0 -1.5708 0</pose>
         <geometry>
             <mesh>
-                <uri>package://digit_sdf_model/visual/hip-roll-housing-mirror.obj</uri>
+                <uri>package://drail_drake/model_files/digit/visual/hip-roll-housing-mirror.obj</uri>
             </mesh>
         </geometry>
     </visual>
+    <collision name="right_waist_cap_collision_0000">
+        <pose>-0.001 -0.09 0 0 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-roll-housing-mirror_parts/hip-roll-housing-mirror_convex_piece_000.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="right_waist_cap_collision_0001">
+        <pose>-0.001 -0.09 0 0 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-roll-housing-mirror_parts/hip-roll-housing-mirror_convex_piece_001.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="right_waist_cap_collision_0002">
+        <pose>-0.001 -0.09 0 0 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-roll-housing-mirror_parts/hip-roll-housing-mirror_convex_piece_002.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="right_waist_cap_collision_0003">
+        <pose>-0.001 -0.09 0 0 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-roll-housing-mirror_parts/hip-roll-housing-mirror_convex_piece_003.obj</uri>
+          </mesh>
+        </geometry>
+    </collision>    
     <collision name="collision_0000">
         <geometry>
         <mesh> 

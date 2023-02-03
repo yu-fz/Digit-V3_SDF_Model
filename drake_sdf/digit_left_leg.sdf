@@ -19,10 +19,28 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://digit_sdf_model/visual/hip-yaw-housing.obj</uri> 
+            <uri>package://drail_drake/model_files/digit/visual/hip-yaw-housing.obj</uri> 
         </mesh>
         </geometry>
     </visual>
+    <collision name="left_hip_roll_collision_0000">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-yaw-housing_parts/hip-yaw-housing_convex_piece_000.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="left_hip_roll_collision_0001">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-yaw-housing_parts/hip-yaw-housing_convex_piece_001.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+    </collision>
 </link>
 <link name="left_hip_yaw">
     <pose>0 0 0 0 0 0 </pose>
@@ -42,7 +60,7 @@
         <pose relative_to="left_hip_yaw_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh>
-            <uri>package://digit_sdf_model/visual/hip-pitch-housing.obj</uri> 
+            <uri>package://drail_drake/model_files/digit/visual/hip-pitch-housing.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -65,34 +83,44 @@
         <pose relative_to="left_hip_pitch_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://digit_sdf_model/visual/hip-pitch.obj</uri> 
+            <uri>package://drail_drake/model_files/digit/visual/hip-pitch.obj</uri> 
         </mesh>
         </geometry>
     </visual>
-    <collision name="left_hip_geom_1">
-        <pose relative_to="left_hip_pitch_joint">0 0 -0.04 0 0 0</pose>
+    <collision name="left_hip_pitch_collision_000">
+        <pose relative_to="left_hip_pitch_joint">0 0 0 0 0 0</pose>
         <geometry>
-            <cylinder>
-                <radius>0.05</radius>
-                <length>0.072</length>
-            </cylinder>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-pitch_parts/hip-pitch_convex_piece_000.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
         </geometry>
     </collision>
-    <collision name="left_hip_geom_2">
-        <pose relative_to="left_hip_pitch_joint">0.12 0 -0.04 0 0 0</pose>
+    <collision name="left_hip_pitch_collision_001">
+        <pose relative_to="left_hip_pitch_joint">0 0 0 0 0 0</pose>
         <geometry>
-            <cylinder>
-                <radius>0.05</radius>
-                <length>0.072</length>
-            </cylinder>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-pitch_parts/hip-pitch_convex_piece_001.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
         </geometry>
     </collision>
-    <collision name="left_hip_geom_3">
-        <pose relative_to="left_hip_pitch_joint">0.06 0 -0.04 0 0 0</pose>
+    <collision name="left_hip_pitch_collision_002">
+        <pose relative_to="left_hip_pitch_joint">0 0 0 0 0 0</pose>
         <geometry>
-            <box>
-                <size>0.06 0.05 0.072</size>
-            </box>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-pitch_parts/hip-pitch_convex_piece_002.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+    </collision>
+    <collision name="left_hip_pitch_collision_003">
+        <pose relative_to="left_hip_pitch_joint">0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/hip-pitch_parts/hip-pitch_convex_piece_003.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
         </geometry>
     </collision>
 </link>
@@ -114,7 +142,7 @@
         <pose relative_to="left_achilles_rod">0 0 0 0 0 0</pose>
         <geometry>
             <mesh>
-                <uri>package://digit_sdf_model/visual/achilles-rod.obj</uri>
+                <uri>package://drail_drake/model_files/digit/visual/achilles-rod.obj</uri>
             </mesh>
         </geometry>
     </visual>
@@ -131,7 +159,7 @@
         <geometry>
             <capsule>
                 <radius>0.007</radius>
-                <length>0.25</length>
+                <length>0.5</length>
             </capsule>
         </geometry>
     </collision>
@@ -154,7 +182,7 @@
         <pose relative_to="left_knee_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://digit_sdf_model/visual/knee.obj</uri> 
+            <uri>package://drail_drake/model_files/digit/visual/knee.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -177,7 +205,7 @@
         <pose relative_to="left_knee_to_shin_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://digit_sdf_model/visual/shin-no-shell.obj</uri> 
+            <uri>package://drail_drake/model_files/digit/visual/shin-no-shell.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -186,7 +214,7 @@
         <geometry>
             <cylinder>
                 <radius>0.03</radius>
-                <length>0.1715</length>
+                <length>0.343</length>
             </cylinder>
         </geometry>
     </collision>
@@ -195,7 +223,7 @@
         <geometry>
             <cylinder>
                 <radius>0.05</radius>
-                <length>0.1</length>
+                <length>0.2</length>
             </cylinder>
         </geometry>
     </collision>
@@ -218,25 +246,44 @@
         <pose relative_to="left_shin_to_tarsus_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://digit_sdf_model/visual/tarsus.obj</uri> 
+            <uri>package://drail_drake/model_files/digit/visual/tarsus.obj</uri> 
         </mesh>
         </geometry>
     </visual>
-    <collision name="left_tarsus_geom_1">
-        <pose relative_to="left_shin_to_tarsus_joint">0.21 -0.03 0 0 1.5708 0</pose>
+    <collision name="left_tarsus_collision_0000">
+        <pose relative_to="left_shin_to_tarsus_joint">0 0 0 0 0 0</pose>
         <geometry>
-            <capsule>
-                <radius>0.02</radius>
-                <length>0.18</length>
-            </capsule>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/tarsus_parts/tarsus_convex_piece_000.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
         </geometry>
     </collision>
-    <collision name="left_tarsus_geom_2">
-        <pose relative_to="left_shin_to_tarsus_joint">-0.07 -0.012 0 0.0873 0 1.13446</pose>
+    <collision name="left_tarsus_collision_001">
+        <pose relative_to="left_shin_to_tarsus_joint">0 0 0 0 0 0</pose>
         <geometry>
-            <box>
-                <size>0.007 0.07 0.03</size>
-            </box>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/tarsus_parts/tarsus_convex_piece_001.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+    </collision>
+    <collision name="left_tarsus_geom_collision_002">
+        <pose relative_to="left_shin_to_tarsus_joint">0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/tarsus_parts/tarsus_convex_piece_002.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+    </collision>
+    <collision name="left_tarsus_collison_003">
+        <pose relative_to="left_shin_to_tarsus_joint">0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/tarsus_parts/tarsus_convex_piece_003.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
         </geometry>
     </collision>
 </link>
@@ -258,7 +305,7 @@
         <pose relative_to="left_heel_spring_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://digit_sdf_model/visual/heel-spring.obj</uri> 
+            <uri>package://drail_drake/model_files/digit/visual/heel-spring.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -289,19 +336,10 @@
         <pose relative_to="left_toe_A">0 0 0 3.14159 1.5526449 -1.5708</pose>
         <geometry>
         <mesh> 
-            <uri>package://digit_sdf_model/visual/toe-output.obj</uri> 
+            <uri>package://drail_drake/model_files/digit/visual/toe-output.obj</uri> 
         </mesh>
         </geometry>
     </visual>
-    <collision name="left_toe_A_geom_1">
-        <pose relative_to="left_toe_A">0 0 0 0 0 0</pose>
-        <geometry>
-            <capsule>
-                <radius>0.007</radius>
-                <length>0.05</length>
-            </capsule>
-        </geometry>
-    </collision>
 </link>
 <link name ="left_toe_A_rod">
     <pose relative_to="left_toe_A_rod_joint">0 0 0 0 3.14159 0</pose>
@@ -321,7 +359,7 @@
         <pose relative_to="left_toe_A_rod">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://digit_sdf_model/visual/toe-A-rod.obj</uri> 
+            <uri>package://drail_drake/model_files/digit/visual/toe-A-rod.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -341,13 +379,40 @@
           </box>
         </geometry>
     </visual> -->
-    <collision name="left_toe_A_rod_geom_1">
+    <!-- <collision name="left_toe_A_rod_geom_1">
         <pose relative_to="left_toe_A_rod">0.17 0 0 0.0698132 1.5708 0</pose>
         <geometry>
             <capsule>
                 <radius>0.007</radius>
-                <length>0.17</length>
+                <length>0.28</length>
             </capsule>
+        </geometry>
+    </collision> -->
+    <collision name="left_toe_A_collison_000">
+        <pose relative_to="left_toe_A_rod">0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/toe-A-rod_parts/toe-A-rod_convex_piece_000.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="left_toe_A_collison_001">
+        <pose relative_to="left_toe_A_rod">0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/toe-A-rod_parts/toe-A-rod_convex_piece_001.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="left_toe_A_collision_002">
+        <pose relative_to="left_toe_A_rod">0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>package://digit_sdf_model/collision/toe-A-rod_parts/toe-A-rod_convex_piece_002.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
         </geometry>
     </collision>
 </link>
@@ -369,19 +434,10 @@
         <pose relative_to="left_toe_B_joint">0 0 0 1.5708 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://digit_sdf_model/visual/toe-output.obj</uri> 
+            <uri>package://drail_drake/model_files/digit/visual/toe-output.obj</uri> 
         </mesh>
         </geometry>
     </visual>
-    <collision name="left_toe_B_geom_1">
-        <pose relative_to="left_toe_B">0 0 0 0 0 0</pose>
-        <geometry>
-            <capsule>
-                <radius>0.007</radius>
-                <length>0.05</length>
-            </capsule>
-        </geometry>
-    </collision>
 </link>
 <link name ="left_toe_B_rod">
     <pose relative_to="left_toe_B_rod_joint">0 0 0 0 0 0</pose>
@@ -401,7 +457,7 @@
         <pose relative_to="left_toe_B_rod_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://digit_sdf_model/visual/toe-B-rod.obj</uri> 
+            <uri>package://drail_drake/model_files/digit/visual/toe-B-rod.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -426,7 +482,7 @@
         <geometry>
             <capsule>
                 <radius>0.007</radius>
-                <length>0.17</length>
+                <length>0.22</length>
             </capsule>
         </geometry>
     </collision>
@@ -449,7 +505,7 @@
         <pose relative_to="left_toe_pitch_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://digit_sdf_model/visual/toe-pitch.obj</uri> 
+            <uri>package://drail_drake/model_files/digit/visual/toe-pitch.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -472,7 +528,7 @@
         <pose relative_to="left_toe_roll_joint">0 0 0 0 0 0</pose>
         <geometry>
         <mesh> 
-            <uri>package://digit_sdf_model/visual/toe-roll.obj</uri> 
+            <uri>package://drail_drake/model_files/digit/visual/toe-roll.obj</uri> 
         </mesh>
         </geometry>
     </visual>
@@ -492,7 +548,7 @@
           </box>
         </geometry>
       </visual> -->
-    <collision name="left_toe_geom_1">
+      <collision name="left_toe_geom_1">
         <pose relative_to="left_toe_roll_joint">0 -0.0437 -0.0255 -1.0472 0 0</pose>
         <geometry>
             <box>
