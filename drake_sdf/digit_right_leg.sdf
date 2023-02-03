@@ -576,12 +576,13 @@
     <pose relative_to="right_hip_pitch_joint">0 0 0.046 -0.07138397 0.0008726646 1.4358824</pose>
     <axis>
         <xyz>0 0 1</xyz>
-        <limit> 
-            <velocity>10</velocity>
-        </limit>
         <dynamics>
             <damping>0.01</damping>
         </dynamics>
+        <limit> 
+            <velocity>10</velocity>
+            <effort>0</effort>
+        </limit>
     </axis>
     <parent>right_hip_pitch</parent>
     <child>right_achilles_rod</child>
@@ -661,6 +662,7 @@
         <limit> 
             <lower>-0.10472</lower>
             <upper>0.10472</upper>
+            <effort>0</effort>
         </limit>
         <dynamics>
             <spring_reference>0</spring_reference>
@@ -691,7 +693,6 @@
     <drake:gear_ratio>50</drake:gear_ratio>
     <drake:rotor_inertia>0.036089</drake:rotor_inertia>
 </joint>
-
 <joint name="right_toe_A_rod_joint" type="ball">
     <pose relative_to="right_toe_A">0.009 0.001 -0.057 -0.005734119 0.03735005 -1.5437437</pose>
     <axis>
@@ -699,6 +700,10 @@
         <dynamics>
             <damping>0.01</damping>
         </dynamics>
+        <limit>
+            <velocity>10</velocity>
+            <effort>0</effort>
+        </limit>
     </axis>
     <parent>right_toe_A</parent>
     <child>right_toe_A_rod</child>
@@ -734,11 +739,14 @@
         <dynamics>
             <damping>0.01</damping>
         </dynamics>
+        <limit>
+            <velocity>10</velocity>
+            <effort>0</effort>
+        </limit>
     </axis>
     <parent>right_toe_B</parent>
     <child>right_toe_B_rod</child>
 </joint>
-
 <joint name="right_toe_pitch_joint" type="revolute">
     <pose relative_to="right_shin_to_tarsus_joint">0.408 0.04 0 0 0 -1.1956</pose>
     <axis>
@@ -781,7 +789,7 @@
     <drake:bushing_frameA>right_heel_spring_frame</drake:bushing_frameA>
     <drake:bushing_frameC>right_achilles_rod_tail_frame</drake:bushing_frameC>
     <drake:bushing_torque_stiffness>0 0 0</drake:bushing_torque_stiffness>
-    <drake:bushing_force_stiffness>10000 10000 10000</drake:bushing_force_stiffness>
+    <drake:bushing_force_stiffness>20000 20000 20000</drake:bushing_force_stiffness>
     <drake:bushing_torque_damping>0 0 0</drake:bushing_torque_damping>
     <drake:bushing_force_damping>50 50 50</drake:bushing_force_damping>
 </drake:linear_bushing_rpy>
