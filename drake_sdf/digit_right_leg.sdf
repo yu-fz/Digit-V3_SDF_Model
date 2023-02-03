@@ -342,7 +342,7 @@
     </visual>
 </link>
 <link name ="right_toe_A_rod">
-    <pose relative_to="right_toe_A_rod_joint">0 0 0 0 0 0</pose>
+    <pose relative_to="right_toe_A_rod_joint">0 0 0 0 3.14159 0</pose>
     <inertial>
         <pose>0.005161 1e-06 -0.002248 0 0 0</pose>
         <mass>0.139557</mass>
@@ -469,11 +469,11 @@
         </geometry>
     </visual> -->
     <collision name="right_toe_B_rod_geom_1">
-        <pose relative_to="right_toe_B_rod_joint">0.17 0 0 -0.0698132 1.5708 0</pose>
+        <pose relative_to="right_toe_B_rod_joint">0.144 0 0 -0.0698132 1.5708 0</pose>
         <geometry>
             <capsule>
                 <radius>0.007</radius>
-                <length>0.17</length>
+                <length>0.288</length>
             </capsule>
         </geometry>
     </collision>
@@ -693,7 +693,7 @@
 </joint>
 
 <joint name="right_toe_A_rod_joint" type="ball">
-    <pose relative_to="right_toe_A">-0.009 0.001 -0.057 -0.005734119 0.03735005 1.5437437</pose>
+    <pose relative_to="right_toe_A">0.009 0.001 -0.057 -0.005734119 0.03735005 -1.5437437</pose>
     <axis>
         <xyz>0 0 1</xyz>
         <dynamics>

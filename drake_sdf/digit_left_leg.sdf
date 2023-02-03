@@ -478,11 +478,11 @@
         </geometry>
     </visual> -->
     <collision name="left_toe_B_rod_geom_1">
-        <pose relative_to="left_toe_B_rod_joint">0.17 0 0 0.0698132 1.5708 0</pose>
+        <pose relative_to="left_toe_B_rod_joint">0.144 0 0 0.0698132 1.5708 0</pose>
         <geometry>
             <capsule>
                 <radius>0.007</radius>
-                <length>0.22</length>
+                <length>0.288</length>
             </capsule>
         </geometry>
     </collision>
@@ -552,7 +552,7 @@
         <pose relative_to="left_toe_roll_joint">0 -0.0437 -0.0255 -1.0472 0 0</pose>
         <geometry>
             <box>
-                <size>0.04 0.1175 0.0115</size>
+                <size>0.08 0.235 0.023</size>
             </box>
         </geometry>
     </collision>
